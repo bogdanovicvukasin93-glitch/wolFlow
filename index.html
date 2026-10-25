@@ -80,6 +80,15 @@
       padding-top:16px;padding-bottom:4px;border-top:1px solid var(--border);
     }
   }
+  @media (max-width:480px){
+    header.site .wrap{padding-inline:18px;padding-block:12px;}
+    header.site .brand{font-size:1rem;gap:7px;}
+    header.site .brand svg{height:24px;}
+    header.site .nav-actions{gap:7px;}
+    header.site .nav-cta{padding:7px 12px;font-size:0.62rem;}
+    header.site .nav-burger{width:36px;height:36px;}
+    header.site .nav-burger-bar{width:16px;}
+  }
   @media (prefers-reduced-motion: reduce){
     header.site nav.site{transition:none;}
   }
@@ -189,9 +198,11 @@
   }
   .hero h1{
     font-family:"Manrope", "Segoe UI", sans-serif;font-weight:800;
-    font-size:clamp(2.3rem, 6.2vw, 4.6rem);line-height:0.96;
+    font-size:clamp(1.5rem, 3.6vw, 2.6rem);line-height:1.1;
     text-transform:uppercase;letter-spacing:-0.01em;
   }
+  .hero h1 span{display:inline;}
+  .hero h1 .hl{color:var(--accent);}
   .hero p.lead{margin-top:20px;color:var(--text-dim);font-size:1.1rem;max-width:44ch;}
   .hero-actions{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;}
   .hero-inner .btn{text-align:center;}
@@ -658,7 +669,7 @@
     <div class="hero-grid">
       <div class="hero-inner">
         <p class="eyebrow decode" data-i18n="hero-eyebrow">Vukašin Bogdanović, UI/UX dizajn i razvoj</p>
-        <h1 data-i18n="hero-h1">Sajtovi sa oštrim instinktom.</h1>
+        <h1><span data-i18n="hero-h1-1a">Loš sajt </span><span class="hl" data-i18n="hero-h1-1b">košta</span><span data-i18n="hero-h1-1c"> više od dobrog.</span><br><span data-i18n="hero-h1-2a">Dok </span><span class="hl" data-i18n="hero-h1-2b">čekate</span><span data-i18n="hero-h1-2c">, klijent bira drugog.</span></h1>
         <p class="lead" data-i18n="hero-lead">Pravim sajtove za svaki brend i biznis &mdash; brze, čiste i tačno onoliko kompleksne koliko vam trebaju, jer je sajt danas prvi utisak koji klijenti imaju o vama.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#proces" data-i18n="hero-btn-primary">Kako radim</a>
@@ -930,7 +941,8 @@
         'nav-work': 'Radovi', 'nav-about': 'O meni', 'nav-process': 'Proces', 'nav-contact': 'Kontakt',
         'nav-cta': 'Pošalji upit',
         'hero-eyebrow': 'Vukašin Bogdanović, UI/UX dizajn i razvoj',
-        'hero-h1': 'Sajtovi sa oštrim instinktom.',
+        'hero-h1-1a': 'Loš sajt ', 'hero-h1-1b': 'košta', 'hero-h1-1c': ' više od dobrog.',
+        'hero-h1-2a': 'Dok ', 'hero-h1-2b': 'čekate', 'hero-h1-2c': ', klijent bira drugog.',
         'hero-lead': 'Pravim sajtove za svaki brend i biznis — brze, čiste i tačno onoliko kompleksne koliko vam trebaju, jer je sajt danas prvi utisak koji klijenti imaju o vama.',
         'hero-btn-primary': 'Kako radim',
         'work-eyebrow': 'Radovi', 'work-h2': 'Pet sajtova, pet različitih problema.', 'work-hint': 'Skroluj',
@@ -970,7 +982,8 @@
         'nav-work': 'Work', 'nav-about': 'About', 'nav-process': 'Process', 'nav-contact': 'Contact',
         'nav-cta': 'Send inquiry',
         'hero-eyebrow': 'Vukašin Bogdanović, UI/UX design & development',
-        'hero-h1': 'Websites with sharp instinct.',
+        'hero-h1-1a': 'A bad website ', 'hero-h1-1b': 'costs', 'hero-h1-1c': ' more than a good one.',
+        'hero-h1-2a': 'While you ', 'hero-h1-2b': 'wait', 'hero-h1-2c': ', the client picks someone else.',
         'hero-lead': 'I build websites for every brand and business — fast, clean, and exactly as complex as they need to be, because today your website is the first impression clients get of you.',
         'hero-btn-primary': 'How I work',
         'work-eyebrow': 'Work', 'work-h2': 'Five sites, five different problems.', 'work-hint': 'Scroll',
